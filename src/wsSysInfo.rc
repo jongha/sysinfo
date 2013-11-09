@@ -1,0 +1,170 @@
+//Microsoft Visual C++에서 생성한 리소스 스크립트입니다.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE 2 리소스에서 생성되었습니다.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+	"1 TYPELIB ""wsSysInfo.tlb""\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 버전
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "wsSysInfo.ocx"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "wsSysInfo.ocx"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+            VALUE "OLESelfRegister", ""
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+		VALUE "Translation", 0x0412, 949
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 아이콘
+//
+
+// 응용 프로그램 아이콘이 모든 시스템에서 일관적인 상태를 유지하도록 하기 위해
+// 가장 낮은 ID 값을 갖는 아이콘을 처음에 배치하였습니다.
+IDI_ABOUTDLL    ICON         "wsSysInfo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 비트맵
+//
+
+IDB_WSSYSINFO   BITMAP   "wsSysInfoCtrl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 대화 상자
+//
+
+IDD_ABOUTBOX_WSSYSINFO DIALOG   34, 22, 260, 55
+CAPTION "wsSysInfo Control 정보"
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "MS Shell Dlg"
+BEGIN
+	ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+	LTEXT           "wsSysInfo Control, Version 1.0",IDC_STATIC,40,10,170,8
+	LTEXT           "Copyright (C) 2003, ",IDC_STATIC,40,25,170,8
+	DEFPUSHBUTTON   "확인",IDOK,221,7,32,16,WS_GROUP
+END
+
+IDD_PROPPAGE_WSSYSINFO DIALOG   0, 0, 250, 62
+STYLE WS_CHILD
+FONT 9, "MS Shell Dlg"
+BEGIN
+    LTEXT           "TODO: 이 대화 상자에 wsSysInfo Control의 속성을 조작하는 컨트롤을 배치합니다.",
+                    IDC_STATIC,7,25,229,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO  
+BEGIN
+    IDD_ABOUTBOX_WSSYSINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+    IDD_PROPPAGE_WSSYSINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 문자열 테이블
+//
+
+STRINGTABLE 
+BEGIN
+	IDS_WSSYSINFO               "wsSysInfo Control"
+	IDS_WSSYSINFO_PPG           "wsSysInfo Property Page"
+	IDS_WSSYSINFO_PPG_CAPTION   "일반"
+
+END
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE 3 리소스에서 생성되었습니다.
+//
+1 TYPELIB "wsSysInfo.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED가 아닙니다.
+

@@ -1,0 +1,53 @@
+// wsSysInfo.idl : ActiveX 컨트롤 프로젝트의 형식 라이브러리 소스입니다.
+
+// 이 파일은 MIDL 컴파일러 도구에 의해 처리되어
+// wsSysInfo.ocx의 리소스가 되는
+// 형식 라이브러리(wsSysInfo.tlb)가 생성됩니다.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(928BD067-19FC-482B-B04C-29C26CAEAC1D), version(1.0),
+  helpfile("wsSysInfo.hlp"),
+  helpstring("wsSysInfo ActiveX 컨트롤 모듈"),
+  control ]
+library wsSysInfoLib
+{
+	importlib(STDOLE_TLB);
+
+	// CwsSysInfoCtrl의 기본 디스패치 인터페이스입니다.
+
+	[ uuid(83318352-C83D-4F2E-837E-4BE0DDB428C0),
+	  helpstring("wsSysInfo Control의 디스패치 인터페이스")]
+	dispinterface _DwsSysInfo
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1), helpstring("메서드 OS")] BSTR OS(void);
+	};
+
+	// CwsSysInfoCtrl의 이벤트 디스패치 인터페이스입니다.
+
+	[ uuid(025A7B8C-E5A4-4CAF-98BC-E61A695B8B64),
+	  helpstring("wsSysInfo Control의 이벤트 인터페이스") ]
+	dispinterface _DwsSysInfoEvents
+	{
+		properties:
+			// 이벤트 인터페이스에 속성이 없습니다.
+
+		methods:
+	};
+
+	// CwsSysInfoCtrl의 클래스 정보입니다.
+
+	[ uuid(304EDCBF-45ED-447D-8F20-E0391F22E55C),
+	  helpstring("wsSysInfo Control"), control ]
+	coclass wsSysInfo
+	{
+		[default] dispinterface _DwsSysInfo;
+		[default, source] dispinterface _DwsSysInfoEvents;
+	};
+
+};
